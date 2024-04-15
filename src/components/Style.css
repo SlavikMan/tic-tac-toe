@@ -33,15 +33,15 @@
 
 @media (max-width: 600px) {
   .board {
-    max-width: 270px;
-    max-height: 280px;
+    max-width: 310px;
+    max-height: 320px;
     margin-top: 8%;
   }
 
   .cell {
-    font-size: 25px;
-    height: 60px;
-    width: 60px;
+    font-size: 35px;
+    height: 65px;
+    width: 65px;
     margin: 10px;
   }
 }
