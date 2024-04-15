@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Square from "./Square";
 import "./Style.css";
-import { log } from "console";
 
 function MainPage() {
   const [squares, setSquares] = useState<Array<string | null>>(
