@@ -32,9 +32,16 @@ function MainPage() {
     }
   }
 
+  let winner = checkWinner(squares);
+  let status;
+  if (winner) {
+    status = "Winner: " + winner + " i Yura kakashka";
+  } else {
+    status = "Now: " + (currTurn ? "X" : "O");
+  }
   function handleClick(i: number) {
     let newArr = [...squares];
-    if (newArr[i]) {
+    if (newArr[i] || winner) {
       return;
     }
     if (currTurn) {
@@ -45,14 +52,6 @@ function MainPage() {
     setCurrTurn(!currTurn);
     setSquares(newArr);
     checkWinner(newArr);
-  }
-
-  let winner = checkWinner(squares);
-  let status;
-  if (winner) {
-    status = "Winner: " + winner + " i Yura kakashka";
-  } else {
-    status = "Now: " + (currTurn ? "X" : "O");
   }
 
   return (
