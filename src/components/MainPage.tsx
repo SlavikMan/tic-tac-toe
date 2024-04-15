@@ -50,7 +50,7 @@ function MainPage() {
   let winner = checkWinner(squares);
   let status;
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Winner: " + winner + "i Yura kakashka";
   } else {
     status = "Now: " + (currTurn ? "X" : "O");
   }
