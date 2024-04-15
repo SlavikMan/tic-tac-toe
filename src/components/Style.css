@@ -11,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 400px;
   width: 450px;
   margin: 0 auto;
   margin-top: 1%;
@@ -29,4 +29,18 @@
   align-items: center;
   font-size: 35px;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .board {
+    max-width: 80%;
+    max-height: 250px;
+  }
+
+  .cell {
+    font-size: 25px; /* Increase font size for smaller screens */
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+  }
 }
