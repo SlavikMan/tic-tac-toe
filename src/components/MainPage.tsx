@@ -54,6 +54,10 @@ function MainPage() {
     checkWinner(newArr);
   }
 
+  function restartHandler() {
+    setSquares([null]);
+  }
+
   return (
     <div className="main">
       <h1>TIC-TAC-TOE</h1>
@@ -75,6 +79,9 @@ function MainPage() {
           <Square value={squares[8]} fillCell={() => handleClick(8)} />
         </div>
       </div>
+      <button onClick={() => restartHandler()} className="restartBtn">
+        Restart
+      </button>
     </div>
   );
 }

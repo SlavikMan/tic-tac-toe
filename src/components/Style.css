@@ -31,6 +31,18 @@
   font-weight: bold;
 }
 
+.restartBtn {
+  padding: 13px 40px;
+  /* border: none; */
+  background-color: white;
+  /* color: white; */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
 @media (max-width: 600px) {
   .board {
     max-width: 310px;
